@@ -1,6 +1,7 @@
 package com.example.dande.test;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -39,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
         }
     };
     private View.OnClickListener minListener = new View.OnClickListener(){
-       public void OnClick(){
-            startActivity(new minActivity);
-
-        }
+       public void onClick(View v){
+           Intent scherm2 = new Intent(MainActivity.this,minActivity.class );
+           startActivity(scherm2);
+       }
     };
 
 }

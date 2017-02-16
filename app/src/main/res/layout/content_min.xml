@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_min"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -13,4 +12,56 @@
     tools:context="com.example.dande.test.minActivity"
     tools:showIn="@layout/activity_min">
 
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="61dp"
+        android:id="@+id/btnGo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnGo"
+        android:layout_alignLeft="@+id/tvMin"
+        android:layout_alignStart="@+id/tvMin"
+        android:layout_marginTop="13dp"
+        android:id="@+id/tvRes" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvEen" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMin"
+        android:textSize="36sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/tvEen"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/tvMin"
+        android:layout_alignRight="@+id/tvEen"
+        android:layout_alignEnd="@+id/tvEen"
+        android:layout_marginTop="18dp"
+        android:id="@+id/tvTwee" />
 </RelativeLayout>

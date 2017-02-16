@@ -6,6 +6,9 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 public class minActivity extends AppCompatActivity {
 
@@ -15,15 +18,28 @@ public class minActivity extends AppCompatActivity {
         setContentView(R.layout.activity_min);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        Button min = (Button) findViewById(R.id.btnMin);
+        //min.setOnClickListener(minListener1); //deze is fucked
     }
+
+    private View.OnClickListener minListener1 = new View.OnClickListener() {
+        public void onClick(View v) {
+
+            //TextView tvEen = (TextView) findViewById(R.id.tvEen);
+            //TextView tvTwee = (TextView) findViewById(R.id.tvTwee);
+            //TextView tv1 = (TextView) findViewById(R.id.tvRes);
+
+
+
+
+            //long n1 = Long.parseLong(tvEen.getText().toString());
+            //long n2 = Long.parseLong(tvTwee.getText().toString());
+            //long res = n1 - n2;
+            //tv1.setText(Long.toString(res));
+
+
+        }
+    };
+
 
 }
